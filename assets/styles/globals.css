@@ -11,7 +11,9 @@
 
 @layer utilities {
   .wrapper {
+    /* width: min(95%, 1910px); */
     @apply max-w-7xl p-5 w-full;
+
   }
 
   @screen md {

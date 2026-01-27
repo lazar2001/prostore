@@ -8,8 +8,8 @@ import Menu from "./menu";
 
 const Header = () => {
   return (
-    <header className="w-full border-b">
-      <div className="wrapper flex-between">
+    <header className="w-full border-b" >
+      <div className="wrapper flex-between " style={{minWidth:"95%"}}>
         <div className="flex-start">
           <Link href="/" className="flex-start">
             <Image
@@ -24,7 +24,7 @@ const Header = () => {
             </span>
           </Link>
         </div>
-        <div className="space-x-2">
+        <div className="space-x-2 " >
           <Menu />
         </div>
       </div>
