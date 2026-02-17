@@ -13,3 +13,11 @@ export const signUpDefaultValues = {
   password: "",
   confirmPassword: "",
 };
+
+export const shippingAddressDefaultValues = {
+  fullName: "Lazar Ledjanac",
+  streetAddress: "Sime Sarajlije 29",
+  city: "Novi Sad",
+  postalCode: "21000",
+  country: "Serbia",
+};

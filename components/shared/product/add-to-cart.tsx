@@ -5,9 +5,8 @@ import { useRouter } from "next/navigation";
 import { Plus, Minus, Loader } from "lucide-react";
 import { Cart, CartItem } from "@/types";
 import { toast } from "sonner";
-import { addItemToCart, removeItemFromCart } from "@/lib/actions/cart.action";
+import { addItemToCart, removeItemFromCart } from "@/lib/actions/cart.actions";
 import { useTransition } from "react";
-import { start } from "repl";
 
 const AddToCart = ({ item, cart }: { item: CartItem; cart?: Cart }) => {
   const router = useRouter();
