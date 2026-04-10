@@ -71,6 +71,9 @@ export const config = {
             data: { name: token.name },
           });
         }
+        if(session?.user.name && trigger === 'update'){
+          token.name = session.user.name
+        }
 
         if(trigger==="signIn" || trigger === "signUp"){
           const cookiesObject = await cookies();

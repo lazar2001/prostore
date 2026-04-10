@@ -10,12 +10,13 @@
 @tailwind utilities;
 
 @layer utilities {
-  .wrapper {
-    /* width: min(95%, 1910px); */
+  /* .wrapper {
+     width: min(95%, 1910px); 
     @apply max-w-7xl p-5 w-full;
-
+  } */
+.wrapper {
+    @apply max-w-7xl lg:mx-auto p-5 md:px-10 w-full;
   }
-
   @screen md {
     .wrapper {
       @apply px-10;
@@ -294,4 +295,12 @@
 a{
     color: inherit;        /* ili npr. color: black; */
   text-decoration: none; /* uklanja podvlačenje */
+}
+
+html.dark .upload-field .text-white {
+  color: #ffffff !important;
+}
+
+.upload-field .text-white {
+  color: #000 !important;
 }

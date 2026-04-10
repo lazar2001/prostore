@@ -19,7 +19,6 @@ import { Button } from "@/components/ui/button";
 import { addItemToCart, removeItemFromCart } from "@/lib/actions/cart.actions";
 import { ArrowRight, Loader, Minus, Plus } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
-import { format } from "path";
 
 const CartTable = ({ cart }: { cart?: Cart }) => {
   const router = useRouter();
